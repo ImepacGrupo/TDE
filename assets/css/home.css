@@ -1,0 +1,17 @@
+@import 'styles.css';
+
+li {
+  line-height: 1.7rem;
+}
+
+.logo-width {
+  width: 8rem;
+}
+
+.logo-text {
+  font-family: monospace;
+}
+
+.nav-text .nav-text:hover {
+  color: darkslategray !important;
+}
