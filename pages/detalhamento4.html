@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhamento de produto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/detalhar-produto.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="shadow-lg bg-pale-yellow">
+            <div class="row pt-1">
+                <div class="offset-1 col-2">
+                    <div class="mt-2">
+                        <img src="../assets/images/logo-2.png" class="logo-width" alt="logo" />
+                    </div>
+                </div>
+                <div class="col-5">
+                    <input class="border-0 rounded py-1 pl-4 mt-2 w-100"
+                        placeholder="Busque produtos marcas e muito mais...">
+                    </input>
+                    <i class="bi-search d-flex align-self-center float-right position-relative mr-3 mt-n4"></i>
+                </div>
+            </div>
+            <div class="row pt-3 pb-2 nav-text font-small-3">
+                <a class="offset-1 col-2 text-decoration-none text-muted nav-text font-small-3" data-toggle="modal"
+                    data-target="#cepModal">
+                    Informe seu <b>CEP</b>
+                </a>
+                <div class="col-5">
+                    <span class="dropdown">
+                        <a class="dropdown-toggle text-decoration-none text-muted nav-text font-small-3 cursor-pointer"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </a>
+
+                        <div class="dropdown-menu bg-dark-gray">
+                            <a class="dropdown-item text-white py-2" href="#">Veículos</a>
+                            <a class="dropdown-item text-white py-2" href="#">Supermercado</a>
+                            <a class="dropdown-item text-white py-2" href="#">Tecnologia</a>
+                            <a class="dropdown-item text-white py-2" href="#">Casa e Móveis</a>
+                            <a class="dropdown-item text-white py-2" href="#">Eletrodomésticos</a>
+                            <a class="dropdown-item text-white py-2" href="#">Esportes e Fitness</a>
+                            <a class="dropdown-item text-white py-2" href="#">Ferramentas</a>
+                            <a class="dropdown-item text-white py-2" href="#">Construção</a>
+                        </div>
+                    </span>
+                    <a class="text-decoration-none text-muted nav-text font-small-3 ml-4" href="#">Ofertas</a>
+                </div>
+                <div class="col-3 d-flex justify-content-end">
+                    <a class="text-decoration-none text-muted nav-text font-small-4" href="#">Cadastrar</a>
+                    <a class="text-decoration-none text-muted nav-text font-small-4 ml-4" href="#">Entrar</a>
+                    <a class="text-decoration-none text-muted nav-text font-small-4 ml-4" href="#">Carrinho</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="m-5 p-5">
+
+
+        <section class="d-flex corpo-site">
+
+            <section class="col-8">
+
+                <div class="container-apresentacao-produto">
+                    <div class="aside-esquerdo-imagems">
+                        <ul class="lista-imagem">
+                            <li><img class="imagem-apresentacao-produto" src="../assets/images/blusa-frente.webp"
+                                    alt=""></li>
+                            <li><img class="imagem-apresentacao-produto" src="../assets/images/blusa-atras.webp" alt="">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <img class="imagem-principal mx-5" src="../assets/images/blusa-capa.webp" alt="">
+
+                    <div class="informacoes-lateral-a-imagem-principal ">
+
+                        <span class="row">
+                            <p class="m-4">Novo | +10mil vendidos
+                            </p>
+                            <img class="favoritos-icone" src="../asses/images/bookmark-heart.svg" alt="">
+                        </span>
+
+
+                        <h1 class="fontes-em-destaque">Moletom Casaco Arte De Caveiras Ossos Esqueletos Dark Hd 5
+
+
+                        </h1>
+                        <p class="font-weight-bold fontes-em-destaque">R$155,50</p>
+                        <p class="text-success">em 10x 159 sem juros</p>
+                        <p class="text-info"> ver mais meios de pagamento</p>
+
+                        <h2 class="fontes-em-destaque">O que você precisa saber sobre este produto </h2>
+
+                        <ul class="">
+                            <li> <img src="../assets/images/verificado.svg" alt="">Gênero: Sem gênero</li>
+                            <li> <img src="../assets/images/capuz.svg" alt="">Capuz: Sim</li>
+                            <li> <img src="../assets/images/material.svg" alt="">Material principal: Poliéster</li>
+                            <li> <img src="../assets/images/verificado.svg" alt="">Marca: EMPERIUM</li>
+                            <li> <img src="../assets/images/moletom.svg" alt="">Tipo de roupa: Moleton</li>
+                            <li> <img src="../assets/images/verificado.svg" alt="">Idade: Adultos</li>
+                        </ul>
+                        <p class="text-info">ver características</p>
+
+                        <p class="">Opções de compra:</p>
+                        <p class="text-info">2 produtos novos a partir de 300 reais </p>
+                        <p class="text-info">11 produtos usados e recondicionados</p>
+
+                        <div>
+
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-success">Adicionar ao carrinho + <img
+                                    src="../assets/images/cart-plus.svg" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="descricao">
+
+                    <h1 class="fontes-em-destaque">Descrição</h1>
+
+                    <p>EMPERIUM COMPANY
+
+                        - Oferecemos atendimento personalizado para estampas que desejar, contate-nos e envie sua
+                        estampa!
+                        - Por favor, sempre se atente aos tamanhos especificados em cada anúncio e faça a medição de uma
+                        roupa sua para comparação. As peças variam de 2 a 3 cm por conta da costura.
+                        - As camisetas babylook são BEM JUSTINHAS ao corpo, se não for da sua preferência, peça pelo
+                        modelo de camiseta básica sem cintura.
+
+                        BLUSA MOLETOM CANGURU COM CAPUZ – ALTA QUALIDADE
+                        Modelo Unissex, Capuz ajustável, mangas longas, barras e punhos elásticos, bolso canguru, forro
+                        macio, costuras reforçadas e estampa frontal.
+                        Produto de ótima qualidade, e muito confortável.
+
+                        ESTAMPA:
+                        A estampa usada é a sublimação, não tem relevo e não desbota do tecido com o tempo!
+                        Você também pode optar pelo moletom sem o bolso ou touca, defina no pós compra.
+
+                        TABELA DE MEDIDAS
+                        P - 70x53
+                        M - 74x57
+                        G - 78x61
+                        GG - 80x65
+
+                        INFANTIL
+                        Inf- Juv 0 - 33x40
+                        Inf- Juv 2 - 43x35
+                        Inf- Juv 4 - 47x39
+                        Inf- Juv 6 - 51x43
+                        Inf- Juv 8 - 53x43
+                        Inf- Juv 10 - 55x45
+                        Inf- Juv 12 - 60x45
+                        Inf- Juv 14 - 63x49
+                        Inf- Juv 16 - 67x53
+
+                        *****ATENÇÃO ÀS MEDIDAS PODEM VARIAR ATÉ 3 CM.*****
+
+
+                        Agradecemos por efetuar sua compra conosco. Estamos à Disposição
+
+                        Garantia do vendedor: 7 dias</p>
+
+                </div>
+
+            </section>
+
+
+            <section class="asides text-leaft ml-4 pr-5 col-4">
+
+                <aside class="aside-primeiro rounded pb-5">
+
+                    <div class="card p-4 card-primario-aside " style="width: 18rem;">
+                        <p class="text-success">Frete grátis</p>
+                        <p>Saiba os prazos de entrega e as formas de envio.</p>
+                        <p><img src="../assets/images/geo-alt.svg" alt="localização icone">
+                            Calcular o prazo de entrega</p>
+                        <p class="text-nowrap">Vendido por <span class="text-info ">ESTOQUE INFORMÁTICA</span></p>
+
+                    </div>
+
+                </aside>
+
+                <aside class="aside-secundario rounded pb-5">
+
+                    <div class="card p-4  card-secundario-aside " style="width: 18rem;">
+
+                        <h3 class="fontes-em-destaque">Sobre o vendedor</h3>
+
+                        <div>
+                            <div class="row">
+                                <img class="mx-3" src="../assets/images/award.svg" alt="">
+                                <div class="">
+                                    <p class="m-0">E-comerce</p>
+                                    <p class="m-0">Um dos melhores do site</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="">
+
+                            <div class="d-flex text-center mt-4 ">
+
+                                <div class=" border-right border-secundary px-3 ">
+                                    <p class="h2 font-weight-bold fontes-em-destaque ">+100</p>
+                                    <p>Vendas nos últimos 60 dias</p>
+                                </div>
+
+                                <div class=" border-right border-secundary px-3">
+                                    <img class="imagems-avalicao" src="../assets/images/message-positive.svg" alt="">
+                                    <p>Presta bom atendimento</p>
+                                </div>
+
+                                <div class=" border-right border-secundary px-3 ">
+                                    <img class="imagems-avalicao" src="../assets/images/time-positive.svg" alt="">
+                                    <p>Entrega os produtos dentro do prazo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <aside class="aside-terciario pb-5 ">
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header text-leaft fontes-em-destaque">Opções de Usados e Recondicionados</div>
+                        <p class="text-info text-leaft m-3"> ver 11 opções de comprar </p>
+                    </div>
+
+
+
+                </aside>
+
+                <aside class="aside-quaternario pb-5 ">
+
+                    <div class="card  " style="width: 18rem;">
+                        <p class="card-header fontes-em-destaque"> Meios de pagamento</p>
+                        <a class="btn btn-success m-3" href=""> <img class="mr-2"
+                                src="../assets/images/credit-card-2-back.svg" alt=""> Pague em até 12x sem juros </a>
+
+                        <div class="pl-3">
+                            <p>Cartões de crédito </p>
+                            <img src="../assets/images/visa.svg" alt="cartão crédito visa">
+                            <img src="../assets/images/card.svg" alt="cartão crédito card">
+                            <img src="../assets/images/elo.svg" alt="cartão crédito elo">
+                        </div>
+
+                        <div class="pl-3">
+                            <p>Cartões de débito </p>
+                            <img src="../assets/images/caixa.svg" alt="cartão débito caixa">
+                        </div>
+
+
+                        <div class="pl-3">
+                            <p>Boleto bancário </p>
+                            <img src="../assets/images/boleto.svg" alt="boleto">
+                        </div>
+
+                        <p class="text-info pl-3 pt-2">Outros meios de pagamento</p>
+
+                    </div>
+
+                </aside>
+
+                <aside class="aside-segundo">
+
+                </aside>
+
+                <aside class="aside-segundo">
+
+                </aside>
+
+                <div class="características-sobre-produto">
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+
+    </main>
+
+    <footer class="">
+        <div class="text-center">
+            <ul class=" d-flex lista-footer text-center justify-content-center ">
+                <li class="m-2">Trabalhe conosco</li>
+                <li class="m-2">Termos e Condições </li>
+                <li class="m-2">Como cuidamos da sua privacidade</li>
+                <li class="m-2">Acessibilidade </li>
+                <li class="m-2">Informações sobre seguro</li>
+                <li class="m-2">Contato</li>
+            </ul>
+            <p>Copyright © 1999-2023 Ebazar.com.br LTDA.</p>
+            <p>CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

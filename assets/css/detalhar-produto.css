@@ -91,6 +91,11 @@ main {
     color: var(--fontes-em-destaque);
 }
 
+footer{
+    background-color: var(--cor-de-fundo-principal);
+
+}
+
 .lista-footer{
   list-style-type: none;
 }
