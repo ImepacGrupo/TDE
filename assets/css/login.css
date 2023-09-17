@@ -1,0 +1,21 @@
+.lista-opcoes {
+    width: 70%;
+}
+
+body{
+    height: 100vh;
+}
+
+header {
+    height: 15%;
+}
+
+main {
+    height: 70%;
+}
+
+footer {
+    height: 15%;
+}
+
+ 

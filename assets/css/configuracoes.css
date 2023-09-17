@@ -1,0 +1,40 @@
+body {
+    height: 100vh;
+}
+
+header {
+    height: 10%;
+}
+
+main {
+    height: calc(100vh - 10% - 15%);
+}
+
+footer {
+    height: 15%
+}
+
+.aside-lateral-direito {
+
+    position: absolute;
+    right: 0;
+    height: calc(100vh - 10% - 15%);
+    background-color: white;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+.modal-rodape {
+    position: relative !important;
+}
+
+footer {
+    background-color: white;
+}
+
+.lista-footer {
+    list-style-type: none;
+}
