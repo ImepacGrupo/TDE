@@ -1,0 +1,11 @@
+.bg-pale-yellow {
+  background-color: #fff159;
+}
+
+.bg-dark-gray {
+  background-color: #333 !important;
+}
+
+a.dropdown-item:hover {
+  background-color: #007aff;
+}

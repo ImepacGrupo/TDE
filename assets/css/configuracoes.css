@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+}
+
+header {
+    height: 20%;
+}
+
+main {
+    height: auto;
+}
+
+section {
+    height: 100%;
+}
+
+footer {
+    height: auto
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+aside {
+    max-height: 400px;
+}
+
+.lista-footer {
+    list-style-type: none;
+}
