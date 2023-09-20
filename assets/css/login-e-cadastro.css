@@ -1,0 +1,27 @@
+.lista-opcoes {
+    width: 100%;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    height: 10%;
+}
+
+main {
+    height: 100vh;
+
+}
+
+footer {
+    height: auto;
+    width: 100%;
+}
+
+.conteudo-principal {
+    justify-content: space-around !important;
+    height: 100%;
+    align-items: center;
+}

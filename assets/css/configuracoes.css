@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+}
+
+header {
+    height: 10%;
+}
+
+main {
+    height: calc(100vh - 20%);
+}
+
+
+footer {
+    height: auto
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+aside {
+    max-height: 400px;
+}
+
+.lista-footer {
+    list-style-type: none;
+}
