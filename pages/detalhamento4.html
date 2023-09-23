@@ -1,295 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhamento de produto</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/detalhar-produto.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../assets/css/home.css">
+  </head>
 
-</head>
+  <body>
+    <header>
+      <nav class="shadow-lg bg-pale-yellow">
+        <div class="row d-flex justify-content-between justify-content-md-start pt-1 mr-3 mr-md-0">
+          <div class="offset-1 col-2">
+            <div class="mt-2">
+              <img src="../assets/images/logo-2.png" class="logo-width" alt="logo" />
+            </div>
+          </div>
 
-<body class="">
-   
-  <header>
-    <nav class="shadow-lg bg-pale-yellow">
-      <div class="row pt-1 first-line-navbar">
-        <div class="offset-1 col-2">
-          <div class="mt-2">
-            <img src="../assets/images/logo-2.png" class="logo-width" alt="logo" />
+          <div class="col-5">
+            <input class="border-0 rounded py-1 pl-4 mt-2 w-100" placeholder="Buscar...">
+            </input>
+            <i class="bi-search d-flex align-self-center float-right position-relative mr-3 mt-n4"></i>
           </div>
         </div>
-        <div class="col-5">
-          <input class="border-0 rounded py-1 pl-4 mt-2 w-100" placeholder="Buscar">
-          </input>
-          <i class="bi-search d-flex align-self-center float-right position-relative mr-3 mt-n4"></i>
+
+        <div class="row pt-3 pb-2 nav-text font-small-3">
+          <a class="offset-1 col-2 text-decoration-none text-muted nav-text font-small-3" data-toggle="modal" data-target="#cepModal">
+            Informe seu <b>CEP</b>
+          </a>
+
+          <div class="col-5">
+            <span class="dropdown">
+              <a class="dropdown-toggle text-decoration-none text-muted nav-text font-small-3 cursor-pointer"
+                 data-toggle="dropdown" aria-expanded="false">
+                Categorias
+              </a>
+              <div class="dropdown-menu bg-dark-gray">
+                <a class="dropdown-item text-white py-2" href="#">Veículos</a>
+                <a class="dropdown-item text-white py-2" href="#">Supermercado</a>
+                <a class="dropdown-item text-white py-2" href="#">Tecnologia</a>
+                <a class="dropdown-item text-white py-2" href="#">Casa e Móveis</a>
+                <a class="dropdown-item text-white py-2" href="#">Eletrodomésticos</a>
+                <a class="dropdown-item text-white py-2" href="#">Esportes e Fitness</a>
+                <a class="dropdown-item text-white py-2" href="#">Ferramentas</a>
+                <a class="dropdown-item text-white py-2" href="#">Construção</a>
+              </div>
+            </span>
+            <a class="text-decoration-none text-muted nav-text font-small-3 ml-4" href="#">Ofertas</a>
+          </div>
+
+          <div class="col-3 d-flex justify-content-end flex-wrap">
+            <a class="text-decoration-none text-muted nav-text font-small-4" href="#">Cadastrar</a>
+            <a class="text-decoration-none text-muted nav-text font-small-4 ml-4" href="#">Entrar</a>
+            <a class="text-decoration-none text-muted nav-text font-small-4 ml-4" href="#">Carrinho</a>
+          </div>
         </div>
-      </div>
-      <div class="row pt-3 pb-2 nav-text font-small-3">
-        <a class="offset-1 col-2 text-decoration-none text-muted nav-text font-small-3" data-toggle="modal"
-          data-target="#cepModal">
-          Informe seu <b>CEP</b>
-        </a>
-        <div class="col-5">
-          <span class="dropdown">
-            <a class="dropdown-toggle text-decoration-none text-muted nav-text font-small-3 cursor-pointer"
-              data-toggle="dropdown" aria-expanded="false">
-              Categorias
-            </a>
+      </nav>
+    </header>
 
-            <div class="dropdown-menu bg-dark-gray">
-              <a class="dropdown-item text-white py-2" href="#">Veículos</a>
-              <a class="dropdown-item text-white py-2" href="#">Supermercado</a>
-              <a class="dropdown-item text-white py-2" href="#">Tecnologia</a>
-              <a class="dropdown-item text-white py-2" href="#">Casa e Móveis</a>
-              <a class="dropdown-item text-white py-2" href="#">Eletrodomésticos</a>
-              <a class="dropdown-item text-white py-2" href="#">Esportes e Fitness</a>
-              <a class="dropdown-item text-white py-2" href="#">Ferramentas</a>
-              <a class="dropdown-item text-white py-2" href="#">Construção</a>
+    <main class="m-3 pt-3 card card-body">
+      <div class="row">
+        <section class="col-md-8 col-sm-12">
+          <div class="d-lg-flex">
+            <ul class="list-style-type-none pl-0 d-flex flex-md-column flex-wrap">
+              <li>
+                <img class="imagem-apresentacao-produto" src="../assets/images/blusa-frente.webp" alt="foto moletom com capuz">
+              </li>
+              <li>
+                <img class="imagem-apresentacao-produto" src="../assets/images/blusa-atras.webp" alt="foto moletom com capuz">
+              </li>
+            </ul>
+            <img class="imagem-principal mx-md-5" src="../assets/images/blusa-capa.webp" alt="foto moletom com capuz">
+            <div>
+              <div class="row">
+                <p class="m-4 font-small-2">Novo | +10mil vendidos</p>
+                <i class="bi-heart text-info font-medium-3 d-flex align-items-center"></i>
+              </div>
+              <h5 class="text-dark mb-4">Moletom Casaco Arte De Caveiras Ossos Esqueletos Dark Hd 5</h5>
+              <span class="font-weight-light font-medium-4 text-dark">R$155,50</span>
+              <span class="text-success d-block">em 10x 15,59 sem juros</span>
+              <a href="#" class="text-nowrap text-decoration-none font-small-3">Ver os meios de pagamento</span>
+              <span class="text-dark font-medium-1 font-weight-bold d-block mt-5">O que você precisa saber sobre este produto </span>
+              <ul class="text-dark font-small-3 pl-md-0">
+                <li> <img src="../assets/images/verificado.svg" alt="">Gênero: Sem gênero</li>
+                <li> <img src="../assets/images/capuz.svg" alt="">Capuz: Sim</li>
+                <li> <img src="../assets/images/material.svg" alt="">Material principal: Poliéster</li>
+                <li> <img src="../assets/images/verificado.svg" alt="">Marca: EMPERIUM</li>
+                <li> <img src="../assets/images/moletom.svg" alt="">Tipo de roupa: Moleton</li>
+                <li> <img src="../assets/images/verificado.svg" alt="">Idade: Adultos</li>
+                <li class="text-info list-style-type-none">Ver características</li>
+              </ul>
+              <p class="text-dark mt-5 mb-2">Opções de compra:</p>
+              <a href="#" class="d-block font-small-2 text-decoration-none">2 produtos novos a partir de R$300</a>
+              <a href="#" class="font-small-2 text-decoration-none">11 produtos usados e recondicionados</a>
             </div>
-          </span>
-          <a class="text-decoration-none text-muted nav-text font-small-3 ml-4" href="#">Ofertas</a>
-        </div>
-        <div class="col-3 d-flex justify-content-center flex-wrap">
-          <a class="text-decoration-none text-muted nav-text font-small-4" href="#">Cadastrar</a>
-          <a class="text-decoration-none text-muted nav-text font-small-4 ml-4" href="#">Entrar</a>
-          <a class="text-decoration-none text-muted nav-text font-small-4 ml-4" href="#">Carrinho</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-    <main class="m-auto p-5 ">
-
-        <section>
-
-            <div class=" ">
-
-                <div class="col-12 text-center">
-
-                    <ul class="lista-imagem text-center">
-                        <li><img class="imagem-apresentacao-produto" src="../assets/images/blusa-frente.webp" alt="">
-                        </li>
-                        <li><img class="imagem-apresentacao-produto" src="../assets/images/blusa-atras.webp" alt="">
-                        </li>
-                    </ul>
-
-                    <img class="col-md-3 " src="../assets/images/blusa-capa.webp" alt="">
-
-                </div>
-
-
-                <div class="informacoes-lateral-a-imagem-principal ">
-
-                    <span class="row">
-                        <p class="m-4">Novo | +10mil vendidos
-                        </p>
-                        <img class="favoritos-icone" src="../asses/images/bookmark-heart.svg" alt="">
-                    </span>
-
-
-                    <h1 class="fontes-em-destaque">Disco sólido interno Kingston SA400S37/960G 960GB</h1>
-                    <p class="font-weight-bold fontes-em-destaque">R$252,50</p>
-                    <p class="text-success">em 10x 78 sem juros</p>
-                    <p class="text-info"> ver mais meios de pagamento</p>
-
-                    <h2 class="fontes-em-destaque">O que você precisa saber sobre este produto </h2>
-
-                    <ul class="">
-                        <li> <img src="../assets/images/verificado.svg" alt="">Gênero: Sem gênero</li>
-                        <li> <img src="../assets/images/capuz.svg" alt="">Capuz: Sim</li>
-                        <li> <img src="../assets/images/material.svg" alt="">Material principal: Poliéster</li>
-                        <li> <img src="../assets/images/verificado.svg" alt="">Marca: EMPERIUM</li>
-                        <li> <img src="../assets/images/moletom.svg" alt="">Tipo de roupa: Moleton</li>
-                        <li> <img src="../assets/images/verificado.svg" alt="">Idade: Adultos</li>
-                    </ul>
-                    <p class="text-info">ver características</p>
-
-                    <p class="">Opções de compra:</p>
-                    <p class="text-info">2 produtos novos a partir de 500 reais </p>
-                    <p class="text-info">11 produtos usados e recondicionados</p>
-
-                    <div>
-
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                        <a href="#" class="btn btn-success">Adicionar ao carrinho + <img
-                                src="../assets/images/cart-plus.svg" alt=""></a>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="descricao">
-
-                <h1 class="fontes-em-destaque">Descrição</h1>
-
-                <p>
-                    Considerado um dispositivo de alto desempenho, a unidade em estado sólido A400 da Kingston é
-                    projetada para as pessoas mais exigentes. Melhora significativamente a capacidade de resposta do
-                    seu sistema, pois atinge velocidades de leitura/gravação de até 500MB/seg e 450MB/seg. Portanto,
-                    é 10 vezes mais rápido do que um disco rígido tradicional.
-                    Sendo composta por uma memória flash, é silenciosa e tem poucas chances de falha.
-
-                    Inquebrável
-                    Além de sua funcionalidade e suporte, a importância dos discos de armazenamento também reside na
-                    sua qualidade e resistência. Não se preocupe e aproveite a durabilidade deste produto devido à
-                    sua capacidade de absorver e resistir a fortes impactos.
-                </p>
-
-            </div>
-
+          </div>
+          <div class="m-5">
+            <h1 class="text-dark my-4">Descrição</h1>
+            <p>
+              EMPERIUM COMPANY - Oferecemos atendimento personalizado para estampas que desejar, contate-nos e envie sua estampa!
+            </p>
+            <p>
+              - Por favor, sempre se atente aos tamanhos especificados em cada anúncio e faça a medição de uma roupa sua para comparação. As peças variam de 2 a 3 cm por conta da costura.
+              <br/>
+              - As camisetas babylook são BEM JUSTINHAS ao corpo, se não for da sua preferência, peça pelo modelo de camiseta básica sem cintura.
+            </p>
+            <p>
+              BLUSA MOLETOM CANGURU COM CAPUZ
+              <br />
+              ALTA QUALIDADE Modelo Unissex, Capuz ajustável, mangas longas, barras e punhos elásticos, bolso canguru, forro macio, costuras reforçadas e estampa frontal. Produto de ótima qualidade, e muito confortável.
+              <br />
+              ESTAMPA: A estampa usada é a sublimação, não tem relevo e não desbota do tecido com o tempo! Você também pode optar pelo moletom sem o bolso ou touca, defina no pós compra.
+            </p>
+            <p>
+              TABELA DE MEDIDAS P - 70x53 M - 74x57 G - 78x61 GG - 80x65 INFANTIL Inf- Juv 0 - 33x40 Inf- Juv 2 - 43x35 Inf- Juv 4 - 47x39 Inf- Juv 6 - 51x43 Inf- Juv 8 - 53x43 Inf- Juv 10 - 55x45 Inf- Juv 12 - 60x45 Inf- Juv 14 - 63x49 Inf- Juv 16 - 67x53
+              <p>
+                *****ATENÇÃO ÀS MEDIDAS PODEM VARIAR ATÉ 3 CM.*****
+              </p>
+              <p>
+                Agradecemos por efetuar sua compra conosco.
+                Estamos à Disposição Garantia do vendedor: 7 dias
+              </p>
+          </div>
         </section>
 
-
-        <section class="text-leaft ml-4 pr-5 col-12 align-items-center d-flex flex-column">
-
-            <aside class="aside-primeiro rounded pb-5">
-
-                <div class="card p-4 card-primario-aside " style="width: 18rem;">
-                    <p class="text-success">Frete grátis</p>
-                    <p>Saiba os prazos de entrega e as formas de envio.</p>
-                    <p><img src="../assets/images/geo-alt.svg" alt="localização icone">
-                        Calcular o prazo de entrega</p>
-                    <p class="text-nowrap">Vendido por <span class="text-info ">ESTOQUE INFORMÁTICA</span></p>
-
-                </div>
-
-            </aside>
-
-            <aside class="aside-secundario rounded pb-5">
-
-                <div class="card p-4  card-secundario-aside " style="width: 18rem;">
-
-                    <h3 class="fontes-em-destaque">Sobre o vendedor</h3>
-
-                    <div>
-                        <div class="row">
-                            <img class="mx-3" src="../assets/images/award.svg" alt="">
-                            <div class="">
-                                <p class="m-0">E-comerce</p>
-                                <p class="m-0">Um dos melhores do site</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="">
-
-                        <div class="d-flex text-center mt-4 ">
-
-                            <div class=" border-right border-secundary px-3 ">
-                                <p class="h2 font-weight-bold fontes-em-destaque ">+100</p>
-                                <p>Vendas nos últimos 60 dias</p>
-                            </div>
-
-                            <div class=" border-right border-secundary px-3">
-                                <img class="imagems-avalicao" src="../assets/images/message-positive.svg" alt="">
-                                <p>Presta bom atendimento</p>
-                            </div>
-
-                            <div class=" border-right border-secundary px-3 ">
-                                <img class="imagems-avalicao" src="../assets/images/time-positive.svg" alt="">
-                                <p>Entrega os produtos dentro do prazo</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </aside>
-
-            <aside class="aside-terciario pb-5 ">
-
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header text-leaft fontes-em-destaque">Opções de Usados e Recondicionados</div>
-                    <p class="text-info text-leaft m-3"> ver 11 opções de comprar </p>
-                </div>
-
-
-
-            </aside>
-
-            <aside class="aside-quaternario pb-5 ">
-
-                <div class="card  " style="width: 18rem;">
-                    <p class="card-header fontes-em-destaque"> Meios de pagamento</p>
-                    <a class="btn btn-success m-3" href=""> <img class="mr-2"
-                            src="../assets/images/credit-card-2-back.svg" alt=""> Pague em até 12x sem juros </a>
-
-                    <div class="pl-3">
-                        <p>Cartões de crédito </p>
-                        <img src="../assets/images/visa.svg" alt="cartão crédito visa">
-                        <img src="../assets/images/card.svg" alt="cartão crédito card">
-                        <img src="../assets/images/elo.svg" alt="cartão crédito elo">
-                    </div>
-
-                    <div class="pl-3">
-                        <p>Cartões de débito </p>
-                        <img src="../assets/images/caixa.svg" alt="cartão débito caixa">
-                    </div>
-
-
-                    <div class="pl-3">
-                        <p>Boleto bancário </p>
-                        <img src="../assets/images/boleto.svg" alt="boleto">
-                    </div>
-
-                    <p class="text-info pl-3 pt-2">Outros meios de pagamento</p>
-
-                </div>
-
-            </aside>
-
-            <aside class="aside-segundo">
-
-            </aside>
-
-            <aside class="aside-segundo">
-
-            </aside>
-
-            <div class="características-sobre-produto">
-
+        <section class="col-md-4 col-sm-12">
+          <aside class="rounded pb-5">
+            <div class="card p-4">
+              <p class="text-success font-weight-bold mb-2">Frete grátis</p>
+              <p class=" font-small-2 mb-2">Saiba os prazos de entrega e as formas de envio.</p>
+              <p class="text-info font-small-2"><i class="bi-geo-alt font-medium-1 pr-1"></i>Calcular o prazo de entrega</p>
+              <p class="text-nowrap font-small-2">Vendido por <span class="text-info">Tecido Fino Importados</span></p>
+              <div>
+                <a href="#" class="btn btn-primary w-100">Comprar</a>
+                <a href="#" class="btn btn-success w-100 mt-3"><i class="bi-cart mr-2"></i>Adicionar ao carrinho</a>
+              </div>
             </div>
+          </aside>
 
+          <aside class="rounded pb-5">
+            <div class="card p-4">
+              <h3 class="font-medium-1 font-weight-bold text-dark">Informações sobre o vendedor</h3>
+              <div>
+                <div class="row text-dark">
+                  <i class="bi-award mx-3 mt-2"></i>
+                  <div class="font-small-3">
+                    <span>E-comerce</span>
+                    <span class="d-block">Um dos melhores do site</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="d-flex text-center mt-4 ">
+                  <div class="border-right px-3 text-dark">
+                    <img class="imagems-avalicao" src="../assets/images/message-positive.svg" alt="">
+                    <p>Presta bom atendimento</p>
+                  </div>
+                  <div class="px-3 text-dark">
+                    <img class="imagems-avalicao" src="../assets/images/time-positive.svg" alt="">
+                    <p>Entrega os produtos dentro do prazo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <aside class="pb-5">
+            <div class="card" >
+              <div class="card-header text-dark bg-white">Opções de Usados e Recondicionados</div>
+              <p class="text-info m-3">Ver 11 opções de comprar</p>
+            </div>
+          </aside>
+
+          <aside class="pb-5">
+            <div class="card" >
+              <p class="card-header text-dark bg-white"> Meios de pagamento</p>
+              <a class="btn btn-success m-3" href=""><i class="bi-credit-card text-white" alt="">Pague em até 12x sem juros</i></a>
+              <div class="pl-3">
+                <p>Cartões de crédito </p>
+                <img src="../assets/images/visa.svg" alt="cartão crédito visa">
+                <img src="../assets/images/card.svg" alt="cartão crédito card">
+                <img src="../assets/images/elo.svg" alt="cartão crédito elo">
+              </div>
+              <div class="pl-3">
+                <p>Cartões de débito </p>
+                <img src="../assets/images/caixa.svg" alt="cartão débito caixa">
+              </div>
+              <div class="pl-3">
+                <p>Boleto bancário </p>
+                <img src="../assets/images/boleto.svg" alt="boleto">
+              </div>
+              <p class="text-info pl-3 pt-2">Outros meios de pagamento</p>
+            </div>
+          </aside>
         </section>
-
-
+      </div>
 
     </main>
 
-    <footer class="d-flex justify-content-center">
-        <div class="text-center">
-            <ul class=" d-flex lista-footer text-center flex-wrap">
-                <li class="m-2">Trabalhe conosco</li>
-                <li class="m-2">Termos e Condições </li>
-                <li class="m-2">Como cuidamos da sua privacidade</li>
-                <li class="m-2">Acessibilidade </li>
-                <li class="m-2">Informações sobre seguro</li>
-                <li class="m-2">Contato</li>
-            </ul>
-            <p>Copyright © 1999-2023 Ebazar.com.br LTDA.</p>
-            <p>CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903.</p>
+    <footer class="container">
+      <div class="row my-5">
+        <div class="col-3">
+          <span class="font-small-3 font-weight-bold">Sobre</span>
+          <ul class="text-muted font-small-2 list-style-type-none p-0 mt-3">
+            <li><a class="text-decoration-none text-muted" href="#">Mercado livre</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Tendências</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Blog</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Sustentabilidade</a></li>
+          </ul>
         </div>
-    </footer>
 
-</body>
+        <div class="col-3">
+          <span class="font-small-3 font-weight-bold">Redes sociais</span>
+          <ul class="text-muted font-small-2 list-style-type-none p-0 mt-3">
+            <li><a class="text-decoration-none text-muted" href="#">Twitter</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Facebook</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Instagram</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">YouTube</a></li>
+          </ul>
+        </div>
+
+        <div class="col-3">
+          <span class="font-small-3 font-weight-bold">Minha conta</span>
+          <ul class="text-muted font-small-2 list-style-type-none p-0 mt-3">
+            <li><a class="text-decoration-none text-muted" href="#">Entre</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Vender</a></li>
+          </ul>
+        </div>
+
+        <div class="col-3">
+          <span class="font-small-3 font-weight-bold">Contato</span>
+          <ul class="text-muted font-small-2 list-style-type-none p-0 mt-3">
+            <li><a class="text-decoration-none text-muted" href="#">Comprar</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Vender</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Solução de problemas</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Segurança</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="row bg-white">
+      <span class="text-center w-100 font-small-2 text-muted py-2 px-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </span>
+    </div>
+
+    <div class="modal fade" id="cepModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body m-2 mb-4">
+            <p class="mb-0 font-weight-bold">Selecione onde quer receber suas compras</p>
+            <p class="font-small-2 text-muted">Você poderá ver custos e prazos de entrega precisos em tudo que procurar.</p>
+            <div class="row">
+              <div class="col-7 pr-0">
+                <label class="font-small-2">Código de Endereçamento Postal</label>
+                <input class="border w-100 rounded font-small-2 py-2 pl-2" placeholder="Informar um CEP" />
+              </div>
+
+              <div class="col-1 pl-0 d-flex flex-column-reverse">
+                <a class="font-small-2 text-nowrap ml-3" href="#">Não sei meu CEP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  </body>
 
 </html>

@@ -1,3 +1,20 @@
+:root {
+    --cor-fonte-principal-site: rgb(136, 135, 135);
+    --cor-parte-inferior-bordas: 2px solid rgb(224, 221, 221);
+    --fontes-em-destaque: black;
+    --cor-de-fundo-principal: white;
+}
+
+footer {
+    background-color: var(--cor-de-fundo-principal);
+}
+
+main {
+    border-bottom: var(--cor-parte-inferior-bordas);
+    color: var(--cor-fonte-principal-site);
+    background-color: var(--cor-de-fundo-principal);
+}
+
 .lista-opcoes {
     width: 100%;
 }

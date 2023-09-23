@@ -1,139 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>ecommerce</title>
-  <link rel="stylesheet" href="../assets/css/home.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  </head>
 
-<body>
-  <header>
-    <nav class="shadow-lg bg-pale-yellow">
-      <div class="row pt-1 first-line-navbar">
-        <div class="offset-1 col-2">
-          <div class="mt-2">
-            <img src="../assets/images/logo-2.png" class="logo-width" alt="logo" />
+  <body>
+    <header>
+      <nav class="shadow-lg bg-pale-yellow">
+        <div class="row d-flex justify-content-between justify-content-md-start pt-1 mr-3 mr-md-0">
+          <div class="offset-1 col-2">
+            <div class="mt-2">
+              <img src="assets/images/logo-2.png" class="logo-width" alt="logo"/>
+            </div>
+          </div>
+
+          <div class="col-5">
+            <input class="border-0 rounded py-1 pl-4 mt-2 w-100" placeholder="Buscar...">
+            </input>
+            <i class="bi-search d-flex align-self-center float-right position-relative mr-3 mt-n4"></i>
           </div>
         </div>
-        <div class="col-5">
-          <input class="border-0 rounded py-1 pl-4 mt-2 w-100" placeholder="Buscar">
-          </input>
-          <i class="bi-search d-flex align-self-center float-right position-relative mr-3 mt-n4"></i>
-        </div>
-      </div>
-      <div class="row pt-3 pb-2 nav-text font-small-3">
-        <a class="offset-1 col-2 text-decoration-none text-muted nav-text font-small-3" data-toggle="modal"
-          data-target="#cepModal">
-          Informe seu <b>CEP</b>
-        </a>
-        <div class="col-5">
-          <span class="dropdown">
-            <a class="dropdown-toggle text-decoration-none text-muted nav-text font-small-3 cursor-pointer"
-              data-toggle="dropdown" aria-expanded="false">
-              Categorias
-            </a>
 
-            <div class="dropdown-menu bg-dark-gray">
-              <a class="dropdown-item text-white py-2" href="#">Veículos</a>
-              <a class="dropdown-item text-white py-2" href="#">Supermercado</a>
-              <a class="dropdown-item text-white py-2" href="#">Tecnologia</a>
-              <a class="dropdown-item text-white py-2" href="#">Casa e Móveis</a>
-              <a class="dropdown-item text-white py-2" href="#">Eletrodomésticos</a>
-              <a class="dropdown-item text-white py-2" href="#">Esportes e Fitness</a>
-              <a class="dropdown-item text-white py-2" href="#">Ferramentas</a>
-              <a class="dropdown-item text-white py-2" href="#">Construção</a>
-            </div>
-          </span>
-          <a class="text-decoration-none text-muted nav-text font-small-3 ml-4" href="#">Ofertas</a>
-        </div>
-        <div class="col-3 d-flex justify-content-center flex-wrap">
-          <a class="text-decoration-none text-muted nav-text font-small-4" href="./pages/cadastro.html">Cadastrar</a>
-          <a class="text-decoration-none text-muted nav-text font-small-4 ml-4" href="./pages/login.html">Entrar</a>
-          <a class="text-decoration-none text-muted nav-text font-small-4 ml-4" href="#">Carrinho</a>
-          <a class="text-decoration-none text-muted nav-text font-small-4 ml-4" href="./pages/alterar-dados.html">Configuração</a>
-        </div>
-      </div>
-    </nav>
-  </header>
+        <div class="row pt-3 pb-2 nav-text font-small-3">
+          <a class="offset-1 col-2 text-decoration-none text-muted nav-text font-small-3" data-toggle="modal" data-target="#cepModal">
+            Informe seu <b>CEP</b>
+          </a>
 
-  <section id="carouselControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <a href="#">
-          <img class="d-block w-100" src="../assets/images/carousel-1.jpg" alt="Promoção carrossel">
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="#">
-          <img class="d-block w-100" src="../assets/images/carousel-2.jpg" alt="Promoção carrossel">
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="#">
-          <img class="d-block w-100" src="../assets/images/carousel-3.jpg" alt="Promoção carrossel">
-        </a>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselControls" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </a>
-    <a class="carousel-control-next" href="#carouselControls" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </a>
-  </section>
+          <div class="col-5">
+            <span class="dropdown">
+              <a class="dropdown-toggle text-decoration-none text-muted nav-text font-small-3 cursor-pointer" data-toggle="dropdown" aria-expanded="false">
+                Categorias
+              </a>
+              <div class="dropdown-menu bg-dark-gray">
+                <a class="dropdown-item text-white py-2" href="#">Veículos</a>
+                <a class="dropdown-item text-white py-2" href="#">Supermercado</a>
+                <a class="dropdown-item text-white py-2" href="#">Tecnologia</a>
+                <a class="dropdown-item text-white py-2" href="#">Casa e Móveis</a>
+                <a class="dropdown-item text-white py-2" href="#">Eletrodomésticos</a>
+                <a class="dropdown-item text-white py-2" href="#">Esportes e Fitness</a>
+                <a class="dropdown-item text-white py-2" href="#">Ferramentas</a>
+                <a class="dropdown-item text-white py-2" href="#">Construção</a>
+              </div>
+            </span>
+            <a class="text-decoration-none text-muted nav-text font-small-3 ml-4" href="#">Ofertas</a>
+          </div>
 
-  <section class="container">
-    <div class="card card-body mt-5">
-      <div class="row">
-        <div class="col-md-3 col-sm-12 text-center mt-3">
-          <div class="text-wrap">Pagamento rápido e seguro</div>
-          <span class="text-muted font-small-2">com Mercado Pago</span>
+          <div class="col-3 d-flex justify-content-end flex-wrap">
+            <a class="text-decoration-none text-muted nav-text font-small-4" href="#">Cadastrar</a>
+            <a class="text-decoration-none text-muted nav-text font-small-4 ml-4" href="#">Entrar</a>
+            <a class="text-decoration-none text-muted nav-text font-small-4 ml-4" href="#">Carrinho</a>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-12 text-center mt-3 ">
-          <i class="bi-credit-card text-info"></i>
-          <span class="text-wrap ml-1">Até 10 parcelas sem juros</span>
-          <a class="d-block font-small-2 ml-4" href="#">Ver mais</a>
+      </nav>
+    </header>
+
+    <section id="carouselControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#">
+            <img class="d-block w-100" src="assets/images/carousel-1.jpg" alt="Promoção carrossel">
+          </a>
         </div>
-        <div class="col-md-3 col-sm-12 text-center mt-3">
-          <i class="bi-cash-coin text-info"></i>
-          <span class="text-wrap ml-1">Parcelamento sem cartão</span>
-          <a class="font-small-2 ml-4 d-block" href="#">Conheça o Mercado Crédito</a>
+        <div class="carousel-item">
+          <a href="#">
+            <img class="d-block w-100" src="assets/images/carousel-2.jpg" alt="Promoção carrossel">
+          </a>
         </div>
-        <div class="col-md-2 col-sm-12 text-center mt-3">
-          <i class="bi-qr-code-scan text-info"></i>
-          <span class="text-wrap ml-1">Via Pix</span>
-          <a class="d-block font-small-2 ml-4" href="#">Ver mais</a>
-        </div>
-        <div class="col-1 mt-3">
-          <a href="#" class="text-decoration-none cursor-pointer">
-            <i class="bi-plus-circle-fill text-info font-medium-3"></i>
+        <div class="carousel-item">
+          <a href="#">
+            <img class="d-block w-100" src="assets/images/carousel-3.jpg" alt="Promoção carrossel">
           </a>
         </div>
       </div>
-    </div>
+      <a class="carousel-control-prev" href="#carouselControls" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselControls" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </section>
 
-    <div class="row col-12 mt-5 card-size">
-      <h4>Ofertas do dia</h4>
-      <a href="#" class="font-small-2 mt-2 ml-3">Ver todas</a>
-    </div>
+    <section class="container d-flex flex-wrap">
+      <div class="card card-body mt-5">
+        <div class="row">
+          <div class="col-xs-12 col-md-3">
+            <div class="text-nowrap">Pagamento rápido e seguro</div>
+            <span class="text-muted font-small-2">com Mercado Pago</span>
+          </div>
 
-    <section class="row ">
+          <div class="col-xs-12 col-md-3 mt-4 mt-md-0">
+            <i class="bi-credit-card text-info"></i>
+            <span class="text-nowrap ml-1">Até 10 parcelas sem juros</span>
+            <a class="d-block font-small-2 ml-4" href="#">Ver mais</a>
+          </div>
 
-      <div class="card col-sm-12 col-md-6  p-4 mt-3" style="">
-        <img class="card-img-top" src="./assets/images/foto-principal.webp" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">RTX 3070</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="./pages/detalhamento1.html" class="btn btn-primary">Ver produto</a>
+          <div class="col-xs-12 col-md-3 mt-4 mt-md-0">
+            <i class="bi-cash-coin text-info"></i>
+            <span class="text-nowrap ml-1">Parcelamento sem cartão</span>
+            <a class="d-block font-small-2 ml-4" href="#">Conheça o Mercado Crédito</a>
+          </div>
+
+          <div class="col-xs-12 col-md-2 mt-4 mt-md-0">
+            <i class="bi-qr-code-scan text-info"></i>
+            <span class="text-nowrap ml-1">Via Pix</span>
+            <a class="d-block font-small-2 ml-4" href="#">Ver mais</a>
+          </div>
+
+          <div class="col-xs-12 col-md-1 mt-3 mt-4 mt-md-1">
+            <a href="#" class="text-decoration-none cursor-pointer">
+              <i class="bi-plus-circle-fill text-info font-medium-3"></i>
+            </a>
+          </div>
         </div>
       </div>
 
-        <div class="card col-sm-12 col-md-6  p-4 mt-3" style="">
-          <img class="card-img-top" src="./assets/images/mouse-capa.webp" alt="Card image cap">
+      <div class="row col-12 mt-5">
+        <h4>Ofertas do dia</h4>
+        <a href="#" class="font-small-2 mt-2 ml-3">Ver todas</a>
+      </div>
+
+      <section class="row ">
+        <div class="card col-sm-12 col-md-6  p-4 mt-3">
+          <img class="card-img-top" src="./assets/images/foto-principal.webp" alt="Card image cap" style="width: 300px">
+          <div class="card-body">
+            <h5 class="card-title">RTX 3070</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="./pages/detalhamento1.html" class="btn btn-primary">Ver produto</a>
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-md-6  p-4 mt-3">
+          <img class="card-img-top" src="./assets/images/mouse-capa.webp" alt="Card image cap" style="width: 300px">
           <div class="card-body">
             <h5 class="card-title">Mouse</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -141,8 +144,8 @@
           </div>
         </div>
 
-        <div class="card col-sm-12 col-md-6  p-4 mt-3" style="">
-          <img class="card-img-top" src="./assets/images/blusa-capa.webp" alt="Card image cap">
+        <div class="card col-sm-12 col-md-6  p-4 mt-3">
+          <img class="card-img-top" src="./assets/images/blusa-capa.webp" alt="Card image cap" style="width: 250px">
           <div class="card-body">
             <h5 class="card-title">Blusa de frio</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -150,8 +153,8 @@
           </div>
         </div>
 
-        <div class="card col-sm-12 col-md-6  p-4 mt-3" style="">
-          <img class="card-img-top" src="./assets/images/foto-produto-teclado-principal.webp" alt="Card image cap">
+        <div class="card col-sm-12 col-md-6  p-4 mt-3">
+          <img class="card-img-top" src="./assets/images/foto-produto-teclado-principal.webp" alt="Card image cap" style="width: 300px">
           <div class="card-body">
             <h5 class="card-title">Teclado</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -159,8 +162,8 @@
           </div>
         </div>
 
-        <div class="card col-sm-12 col-md-6  p-4 mt-3" style="">
-          <img class="card-img-top" src="./assets/images/imagem-nintendo-switch-capa.webp" alt="Card image cap">
+        <div class="card col-sm-12 col-md-6  p-4 mt-3">
+          <img class="card-img-top" src="./assets/images/imagem-nintendo-switch-capa.webp" alt="Card image cap" style="width: 300px">
           <div class="card-body">
             <h5 class="card-title"> Nintendo Switch</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -168,8 +171,8 @@
           </div>
         </div>
 
-        <div class="card col-sm-12 col-md-6  p-4 mt-3" style="">
-          <img class="card-img-top" src="./assets/images/ssd-capa.webp" alt="Card image cap">
+        <div class="card col-sm-12 col-md-6  p-4 mt-3">
+          <img class="card-img-top" src="./assets/images/ssd-capa.webp" alt="Card image cap" style="width: 300px">
           <div class="card-body">
             <h5 class="card-title">SSD Kingston</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -177,108 +180,98 @@
           </div>
         </div>
 
+      </section>
     </section>
 
+    <section class="row bg-white text-center pb-5 mt-5">
+      <div class="offset-1 col-xs-12 col-md-3 pt-5">
+        <img src="assets/images/payment.svg" alt="ícone de cartão"/>
+        <div class="font-medium-2 mt-4">Escolha como pagar</div>
+        <span class="text-muted font-small-3">Com o Mercado Pago, você paga com cartão, boleto ou Pix. Você também pode pagar em até 12x no boleto com o Mercado Crédito.</span>
+      </div>
+
+      <div class="col-xs-12 col-md-3 ml-5 pt-5">
+        <img src="assets/images/shipping.svg" alt="ícone de caixa"/>
+        <div class="font-medium-2 mt-4">Frete grátis a partir de R$ 79</div>
+        <span class="text-muted font-small-3">Ao se cadastrar no Mercado Livre, você tem frete grátis em milhares de produtos.</span>
+      </div>
+
+      <div class="col-xs-12 col-md-3 ml-5 pt-5">
+        <img src="assets/images/protected.svg" alt="ícone de escudo"/>
+        <div class="font-medium-2 mt-4">Segurança, do início ao fim</div>
+        <span class="text-muted font-small-3">Você não gostou do que comprou? Devolva! No Mercado Livre não há nada que você não possa fazer, porque você está sempre protegido.</span>
+      </div>
+    </section>
+
+    <footer class="container">
+      <div class="row my-5">
+        <div class="col-3">
+          <span class="font-small-3 font-weight-bold">Sobre</span>
+          <ul class="text-muted font-small-2 list-style-type-none p-0 mt-3">
+            <li><a class="text-decoration-none text-muted" href="#">Mercado livre</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Tendências</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Blog</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Sustentabilidade</a></li>
+          </ul>
+        </div>
+
+        <div class="col-3">
+          <span class="font-small-3 font-weight-bold">Redes sociais</span>
+          <ul class="text-muted font-small-2 list-style-type-none p-0 mt-3">
+            <li><a class="text-decoration-none text-muted" href="#">Twitter</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Facebook</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Instagram</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">YouTube</a></li>
+          </ul>
+        </div>
+
+        <div class="col-3">
+          <span class="font-small-3 font-weight-bold">Minha conta</span>
+          <ul class="text-muted font-small-2 list-style-type-none p-0 mt-3">
+            <li><a class="text-decoration-none text-muted" href="#">Entre</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Vender</a></li>
+          </ul>
+        </div>
+
+        <div class="col-3">
+          <span class="font-small-3 font-weight-bold">Contato</span>
+          <ul class="text-muted font-small-2 list-style-type-none p-0 mt-3">
+            <li><a class="text-decoration-none text-muted" href="#">Comprar</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Vender</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Solução de problemas</a></li>
+            <li><a class="text-decoration-none text-muted" href="#">Segurança</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="row bg-white">
+      <span class="text-center w-100 font-small-2 text-muted py-2 px-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </span>
     </div>
 
-  </section>
+    <div class="modal fade" id="cepModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body m-2 mb-4">
+            <p class="mb-0 font-weight-bold">Selecione onde quer receber suas compras</p>
+            <p class="font-small-2 text-muted">Você poderá ver custos e prazos de entrega precisos em tudo que procurar.</p>
+            <div class="row">
+              <div class="col-7 pr-0">
+                <label class="font-small-2">Código de Endereçamento Postal</label>
+                <input class="border w-100 rounded font-small-2 py-2 pl-2" placeholder="Informar um CEP" />
+              </div>
 
-  <section class="row bg-white py-5 text-center mt-5 mx-4">
-    <div class=" col-sm-12 col-md-4">
-      <img src="../assets/images/payment.svg" alt="ícone de cartão" />
-      <div class="font-medium-2 mt-4 ">Escolha como pagar</div>
-      <p class="text-muted font-small-3 text-wrap px-2">Com o Mercado Pago, você paga com cartão, boleto ou Pix. Você
-        também pode
-        pagar em até 12x no boleto com o Mercado Crédito.</p>
-    </div>
-    <div class="  col-sm-12 col-md-4">
-      <img src="../assets/images/shipping.svg" alt="ícone de caixa" />
-      <div class="font-medium-2 mt-4">Frete grátis a partir de R$ 79</div>
-      <p class="text-muted font-small-3 text-wrap">Ao se cadastrar no Mercado Livre, você tem frete grátis em milhares
-        de
-        produtos.</p>
-    </div>
-    <div class="  col-sm-12 col-md-4 text-sm-wrap">
-      <img src="../assets/images/protected.svg" alt="ícone de escudo" />
-      <div class="font-medium-2 mt-4">Segurança, do início ao fim</div>
-      <p class="text-muted font-small-3 text-wrap">Você não gostou do que comprou? Devolva! No Mercado Livre não há nada
-        que
-        você não possa fazer, porque você está sempre protegido.</p>
-    </div>
-  </section>
-
-  <footer class="container">
-    <div class="row my-5">
-      <div class="col-3">
-        <span class="font-small-3 font-weight-bold">Sobre</span>
-        <ul class="text-muted font-small-2 list-style-type-none p-0 mt-3">
-          <li><a class="text-decoration-none text-muted" href="#">Mercado livre</a></li>
-          <li><a class="text-decoration-none text-muted" href="#">Tendências</a></li>
-          <li><a class="text-decoration-none text-muted" href="#">Blog</a></li>
-          <li><a class="text-decoration-none text-muted" href="#">Sustentabilidade</a></li>
-        </ul>
-      </div>
-      <div class="col-3">
-        <span class="font-small-3 font-weight-bold">Redes sociais</span>
-        <ul class="text-muted font-small-2 list-style-type-none p-0 mt-3">
-          <li><a class="text-decoration-none text-muted" href="#">Twitter</a></li>
-          <li><a class="text-decoration-none text-muted" href="#">Facebook</a></li>
-          <li><a class="text-decoration-none text-muted" href="#">Instagram</a></li>
-          <li><a class="text-decoration-none text-muted" href="#">YouTube</a></li>
-        </ul>
-      </div>
-      <div class="col-3">
-        <span class="font-small-3 font-weight-bold">Minha conta</span>
-        <ul class="text-muted font-small-2 list-style-type-none p-0 mt-3">
-          <li><a class="text-decoration-none text-muted" href="#">Entre</a></li>
-          <li><a class="text-decoration-none text-muted" href="#">Vender</a></li>
-        </ul>
-      </div>
-      <div class="col-3">
-        <span class="font-small-3 font-weight-bold">Contato</span>
-        <ul class="text-muted font-small-2 list-style-type-none p-0 mt-3">
-          <li><a class="text-decoration-none text-muted" href="#">Comprar</a></li>
-          <li><a class="text-decoration-none text-muted" href="#">Vender</a></li>
-          <li><a class="text-decoration-none text-muted" href="#">Solução de problemas</a></li>
-          <li><a class="text-decoration-none text-muted" href="#">Segurança</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <div class="bg-white">
-    <p class="text-center font-small-2 text-muted py-2">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua
-    </p>
-  </div>
-
-  <div class="modal fade" id="cepModal" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body m-2 mb-4">
-          <p class="mb-0 font-weight-bold">Selecione onde quer receber suas compras</p>
-          <p class="font-small-2 text-muted">Você poderá ver custos e prazos de entrega precisos em tudo que procurar.
-          </p>
-          <div class="row">
-            <div class="col-7 pr-0">
-              <label class="font-small-2">Código de Endereçamento Postal</label>
-              <input class="border w-100 rounded font-small-2 py-2 pl-2" placeholder="Informar um CEP" />
-            </div>
-            <div class="col-1 pl-0 d-flex flex-column-reverse">
-              <a class="font-small-2 text-wrap ml-3" href="#">Não sei meu CEP</a>
+              <div class="col-1 pl-0 d-flex flex-column-reverse">
+                <a class="font-small-2 text-nowrap ml-3" href="#">Não sei meu CEP</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  </body>
 </html>
