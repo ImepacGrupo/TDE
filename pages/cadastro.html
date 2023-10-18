@@ -45,6 +45,27 @@
         <section class="conteudo-principal d-flex justify-content-center p-5">
 
             <form class="" onsubmit="validation()" autocomplete="off">
+
+                <div class="alert alert-danger d-none alert-error" role="alert" id="alert">
+                    Campos obrigatórios não preenchidos.
+                </div>
+
+                <div class="alert alert-danger d-none alert-error" role="alert" id="alertPasswordSpecialCaracter">
+                    A senha deve conter pelo menos 3 caracteres especiais.
+                </div>
+
+                <div class="alert alert-danger d-none alert-error" role="alert" id="alertPasswordSmall">
+                    A senha deve conter pelo menos 6 caracteres.
+                </div>
+
+                <div class="alert alert-danger d-none alert-error" role="alert" id="AlertUnmarked">
+                    Aceite os termos de uso para prosseguir.
+                </div>
+
+                <div class="alert alert-success d-none" role="alert" id="alertSucess">
+                    Cadastro realizado com sucesso!!
+                </div>
+
                 <h1 class="display-6 text-dark"> Criar conta:</h1>
 
                 <div class="form-row text">
