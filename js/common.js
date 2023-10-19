@@ -50,7 +50,6 @@ function validationFormUser(event) {
     }
 }
 
-
 function validationFormProduct(event) {
 
     var errorMessages = document.querySelectorAll(".alert");
@@ -116,3 +115,24 @@ function clearFields(fields) {
     var form = document.getElementById("forms");
     form.reset();
 }
+
+function showWelcomeModal() {
+    var modal = document.getElementById('welcomeModal');
+    modal.style.display = 'block';
+}
+
+function closeWelcomeModal() {
+    var modal = document.getElementById('welcomeModal');
+    modal.style.display = 'none';
+}
+
+function showWelcomeModal() {
+    document.getElementById("welcomeModal").style.display = "block";
+    setTimeout(function () {
+        welcomeModal.style.display = "none";
+    }, 5000);
+}
+
+window.onload = function () {
+    showWelcomeModal();
+};
