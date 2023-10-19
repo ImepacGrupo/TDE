@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar conta</title>
+    <title>Criar Anúncio de produto</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/detalhar-produto.css">
@@ -44,91 +44,58 @@
 
         <section class="conteudo-principal d-flex justify-content-center p-5">
 
-            <form class="" onsubmit="validation()" autocomplete="off">
+            <form class="" id="forms" onsubmit="return validationFormProduct(event)" autocomplete="off">
 
-                <div class="alert alert-danger d-none alert-error" role="alert" id="alert">
+                <div class="alert alert-danger d-none alert" role="alert" id="alert">
                     Campos obrigatórios não preenchidos.
                 </div>
 
-                <div class="alert alert-danger d-none alert-error" role="alert" id="alertPasswordSpecialCaracter">
+                <div class="alert alert-danger d-none alert" role="alert" id="alertNoFile">
+                    A foto do produto e um campo obrigatórios.
+                </div>
+
+                <div class="alert alert-danger d-none alert" role="alert" id="alertPasswordSpecialCaracter">
                     A senha deve conter pelo menos 3 caracteres especiais.
                 </div>
 
-                <div class="alert alert-danger d-none alert-error" role="alert" id="alertPasswordSmall">
+                <div class="alert alert-danger d-none alert" role="alert" id="alertPasswordSmall">
                     A senha deve conter pelo menos 6 caracteres.
                 </div>
 
-                <div class="alert alert-danger d-none alert-error" role="alert" id="AlertUnmarked">
+                <div class="alert alert-danger d-none alert" role="alert" id="AlertUnmarked">
                     Aceite os termos de uso para prosseguir.
                 </div>
 
-                <div class="alert alert-success d-none" role="alert" id="alertSucess">
+                <div class="alert alert-success d-none alert" role="alert" id="alertSucess">
                     Cadastro realizado com sucesso!!
                 </div>
 
-                <h1 class="display-6 text-dark"> Criar conta:</h1>
+                <h1 class="display-6 text-dark"> Criar Anúncio de produto:</h1>
 
                 <div class="form-row text">
                     <div class="form-group col-md-6">
-                        <label for="email">email</label>
-                        <input type="text" class="form-control" id="email">
+                        <label for="email">Nome Produto</label>
+                        <input type="text" class="form-control" id="nameProduct" data-required="true">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="senha">senha</label>
-                        <input type="password" class="form-control" id="senha">
+                        <label for="senha">Valor</label>
+                        <input type="password" class="form-control" id="value" data-required="true">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="endereco">endereço</label>
-                    <input type="text" class="form-control" id="endereco" placeholder="" ">
+                    <label for="endereco">Descrição</label>
+                    <input type="text" class="form-control" id="description" placeholder="" data-required="true">
                 </div>
 
-                <div class=" form-row">
-                    <div class="form-group col-md-6">
-                        <label for="cidade">cidade</label>
-                        <input type="text" class="form-control" id="cidade">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="inputState">estado</label>
-                        <select id="estado" class="form-control">
-                            <option value="" disabled selected>Escolha</option>
-                            <option value="AC">Acre</option>
-                            <option value="AL">Alagoas</option>
-                            <option value="AP">Amapá</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="BA">Bahia</option>
-                            <option value="CE">Ceará</option>
-                            <option value="DF">Distrito Federal</option>
-                            <option value="ES">Espírito Santo</option>
-                            <option value="GO">Goiás</option>
-                            <option value="MA">Maranhão</option>
-                            <option value="MT">Mato Grosso</option>
-                            <option value="MS">Mato Grosso do Sul</option>
-                            <option value="MG">Minas Gerais</option>
-                            <option value="PA">Pará</option>
-                            <option value="PB">Paraíba</option>
-                            <option value="PR">Paraná</option>
-                            <option value="PE">Pernambuco</option>
-                            <option value="PI">Piauí</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="RN">Rio Grande do Norte</option>
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="RO">Rondônia</option>
-                            <option value="RR">Roraima</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="SE">Sergipe</option>
-                            <option value="TO">Tocantins</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-2">
-                        <label for="complemento">Complemento</label>
-                        <input type="text" class="form-control" id="complemento">
-                    </div>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Adicionar arquivo</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1" data-required="true"
+                        id="file">
                 </div>
+
                 <div class="form-group">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="aceite">
+                        <input class="form-check-input" type="checkbox" id="aceite" data-required="true">
                         <label class="form-check-label" for="gridCheck">
                             Eu aceito os termos e condições.
                         </label>

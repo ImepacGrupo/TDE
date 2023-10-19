@@ -1,4 +1,4 @@
-function validation() {
+function validationFormUser(event) {
 
     var errorMessages = document.querySelectorAll(".alert-error");
     errorMessages.forEach(function (element) {
@@ -6,15 +6,14 @@ function validation() {
     });
 
     var accept = document.getElementById("aceite");
-    var fields = ["email", "senha", "endereco", "cidade", "estado"];
+    var elements = document.getElementById("forms").elements
     var emptyField = false;
 
+    for (i = 0; i < elements.length; i++) {
+        var field = elements[i];
+        var isRequired = field.getAttribute("data-required") === "true";
 
-    for (i = 0; i < fields.length; i++) {
-
-        var field = document.getElementById(fields[i]);
-
-        if (field.value === "") {
+        if (isRequired && field.value === "") {
             field.focus();
             event.preventDefault();
             document.getElementById("alert").classList.remove("d-none");
@@ -41,16 +40,57 @@ function validation() {
         document.getElementById("AlertUnmarked").classList.remove("d-none");
         emptyField = true;
     }
-
     if (!emptyField) {
         event.preventDefault();
-        clearFields(fields)
+        clearFields(elements)
         document.getElementById("alertSucess").classList.remove("d-none");
         return true;
     } else {
         return false;
     }
 }
+
+
+function validationFormProduct(event) {
+
+    var errorMessages = document.querySelectorAll(".alert");
+    errorMessages.forEach(function (element) {
+        element.classList.add("d-none")
+    });
+
+    var accept = document.getElementById("aceite");
+    var elements = document.getElementById("forms").elements
+    var emptyField = false;
+
+    for (i = 0; i < elements.length; i++) {
+        var field = elements[i];
+        var isRequired = field.getAttribute("data-required") === "true";
+
+        if (isRequired && field.value === "") {
+            field.focus();
+            event.preventDefault();
+            document.getElementById("alert").classList.remove("d-none");
+            emptyField = true;
+            break;
+        }
+    }
+
+    if (!accept.checked) {
+        document.getElementById("AlertUnmarked").classList.remove("d-none");
+        emptyField = true;
+    }
+
+
+    if (!emptyField) {
+        event.preventDefault();
+        clearFields(elements)
+        document.getElementById("alertSucess").classList.remove("d-none");
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 function patternPassword(password) {
     if (password.length < 6 || password === "") {
@@ -72,28 +112,7 @@ function containsSpecialCaracter(password) {
         return false;
     }
 }
-
 function clearFields(fields) {
-    for (var i = 0; i < fields.length; i++) {
-        var element = document.getElementById(fields[i]);
-        var elementType = element.type.toLowerCase();
-
-        switch (elementType) {
-            case 'text':
-            case 'password':
-            case 'textarea':
-            case 'email':
-            case 'tel':
-                element.value = '';
-                break;
-            case 'checkbox':
-            case 'radio':
-                element.checked = false;
-                break;
-            case 'select-one':
-            case 'select-multiple':
-                element.selectedIndex = -1;
-                break;
-        }
-    }
+    var form = document.getElementById("forms");
+    form.reset();
 }
