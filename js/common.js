@@ -1,6 +1,6 @@
 function validationFormUser(event) {
 
-    var errorMessages = document.querySelectorAll(".alert-error");
+    var errorMessages = document.querySelectorAll(".alert");
     errorMessages.forEach(function (element) {
         element.classList.add("d-none")
     });
